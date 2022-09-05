@@ -1,5 +1,6 @@
 var texto = document.querySelector(".campo-texto");
 var pantalla = document.querySelector(".pantalla");
+var imagen = document.querySelector(".estado");
 
 function encriptar(){
     var mensaje = texto.value.toLocaleLowerCase();
@@ -57,6 +58,17 @@ function copiar(){
     pantalla.select();
     document.execCommand("copy");
 }
+
+function verificar(){
+    var mensaje = texto.value.toLocaleLowerCase();
+    if(mensaje==="" && pantalla.value===""){
+        imagen.style.visibility="visible";
+    }else{
+        imagen.style.visibility="hidden";
+    }
+}
+
+setInterval(verificar,400);
 
 var botonEncriptar = document.querySelector(".boton-encriptar");
 botonEncriptar.onclick=encriptar;

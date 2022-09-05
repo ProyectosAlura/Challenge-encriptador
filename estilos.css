@@ -25,7 +25,7 @@ main{
 
     border: 1px solid #a4bad5;
     border-radius: 5px;
-    background-color: #F3F5FC;
+    background: #F3F5FC;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -76,6 +76,12 @@ main{
     border-radius: 32px;
     box-shadow: 10px 20px 60px 5px #b4c5da;
 
+}
+
+.imagen-munheco{
+    position: absolute;
+    top:40px;
+    left: 30px;   
 }
 
 .pantalla{
