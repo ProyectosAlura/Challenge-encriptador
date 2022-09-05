@@ -41,5 +41,21 @@ function encriptar(){
 
 }
 
+function desencriptar(){
+    var mensaje = texto.value.toLocaleLowerCase();
+    var desencriptado = mensaje.replace(/enter/g,"e") /* Se reemplan globalmente*/
+    .replace(/imes/g,"i")
+    .replace(/ai/g,"a")
+    .replace(/ober/g,"o")
+    .replace(/ufat/g,"u");
+
+    texto.value="";
+    pantalla.innerText=desencriptado;
+}
+
 var botonEncriptar = document.querySelector(".boton-encriptar");
 botonEncriptar.onclick=encriptar;
+
+var botonDesencriptar = document.querySelector(".boton-desencriptar");
+botonDesencriptar.onclick=desencriptar;
+
