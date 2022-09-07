@@ -208,10 +208,9 @@ body{
     }
 
     .boton-copiar{
-        position: relative;
-        top: 30%;
+        position: absolute;
+        top: 75%;
         left: 25%;
-        text-align: center;
     }
 
 }
@@ -287,8 +286,6 @@ body{
         height: 20%;
     }
 
-   
-    
     .imagen-munheco{
         visibility: hidden;
     }
