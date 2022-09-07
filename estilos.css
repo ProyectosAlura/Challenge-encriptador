@@ -209,7 +209,7 @@ body{
 
     .boton-copiar{
         position: relative;
-        top: 35%;
+        top: 30%;
         left: 25%;
         text-align: center;
     }
@@ -262,7 +262,6 @@ body{
 
     .pantalla{
         margin: 0px;
-        border: 1px solid blue;
         position: relative;
         width: 82%;
         height: 55%;
